@@ -32,7 +32,7 @@ services:
       - rede-externa
 
   frontend:
-    build: ./projeto_signus_front
+    build: ./frontend
     container_name: frontend_react
     restart: always
     networks:

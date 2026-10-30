@@ -23,6 +23,6 @@ export const ambiente = {
   },
   jwt: {
     segredo: obrigatoria("JWT_SECRET"),
-    expiracao: process.env.JWT_EXPIRES_IN ?? "1d",
+    expiracaoSegundos: Number(process.env.JWT_EXPIRA_EM_SEGUNDOS ?? 86400),
   },
 } as const;
